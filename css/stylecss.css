@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(46, 46, 46) ;
+}
+.header{
+    margin: 50px 100px ;
+    width: 90%;
+    height: 90px;
+    display: flex;
+}
+.logo{
+    height: 110% ;
+    width: 150px ;
+    margin-left: 35px;
+}
+ul{
+    margin: 35px ;
+}
+.li-home{
+    list-style-type:none;
+    width: 105px;
+    display:inline-block;
+    position: relative;
+    padding: 5px;
+    margin: 0 5px;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: white;
+    font-size: larger;
+}
+.li-home::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border:2px solid rgb(83, 71, 0) ;
+    border-left: transparent;
+    border-right: transparent;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .5s;
+}
+.li-home:hover::after{
+    transform: scaleX(1);
+}
+.li-home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 97%;
+    height: 109%;
+    border: 2px solid rgb(83, 71, 0);
+    border-top: transparent;
+    border-bottom: transparent;
+    transform: scaleY(0);
+    transition: .5s;
+}
+.li-home:hover::before{
+    transform: scaleY(1);
+}
+.div_categori{
+    visibility: hidden;
+    background-color: rgb(75, 74, 74);
+    width: 500px;
+    height: 170px;
+    bottom: -180px;
+    padding-top: 5px;
+    position: absolute;
+    border: 2px solid rgb(83, 71, 0) ;
+}
+.li-categori{
+    position: relative;
+    z-index: 1;
+}
+.li-categori:hover .div_categori{
+    visibility: visible;
+}
+.p-head-grid{
+    border-bottom: 2px dotted rgb(206, 206, 206) ;
+    width: 100px ;
+    padding-bottom: 5px;
+}
+.div-grid{
+    width: 100px;
+    margin:6px 0 10px 10px;
+    color: white;
+    display: grid;
+    grid-template-columns: 150px  150px 150px;
+}
+.div-p-head{
+    grid-gap:60px 60px ;
+    margin: 5px 0 5px 30px;
+}
+.div-icon-header{
+    height: 110%;
+    width: 200px ;
+}
+.buy-icon,.icon-header2{
+    margin: 15px 15px 10px 20px;
+}
+.icon-header{
+    font-size: 30px;
+    color: rgb(153, 130, 1);
+}
+.icon-header3{
+    margin-left: 20px;
+}
+.sub-header,.span-header{
+    color: white;
+    font-size: large;
+}
+.sub-header{
+    margin-left: -17px;
+    font-size: large;
+    background-color: rgb(153, 130, 1);
+    border-radius: 50%;
+}
+/* ################################################################################### */
+.continer{
+width: 80% ;
+margin: auto;
+}
+.home{
+    margin-top: 50px;
+    height: 500px;
+    background-image: url(../photo/DALL·E\ 2024-10-01\ 22.53.35\ -\ A\ collection\ of\ sportswear\ sets\ displayed\ neatly.\ The\ image\ should\ feature\ various\ athletic\ outfits\,\ including\ matching\ tops\ and\ bottoms\ like\ t-shirts.webp);
+    background-size: cover;
+    position: relative;
+}
+.home-info{
+    width: 50%;
+    height: 500px;
+}
+.h2-home{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 200px;
+    padding-left: 100px;
+    color: white;
+}
+.overlay{
+    width:100%;
+    height:100%;
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+}
+.btn-home{
+    margin-left: 100px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+/* ############################################################################################ */
+.div-special-headr{
+    margin-top: 30px;
+}
+.div-special-headr:hover .hrr{
+    width: 230px ;
+    transition: 1s;
+}
+.hrr{
+    width: 90px ;
+    height: 3px ;
+    background-color: rgb(97, 82, 0);
+    margin: auto;
+    margin-top: 5px;
+}
+.h2-special{
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}
+.div-special-item{
+    display: flex;
+}
+.div-special-info{
+    margin: 20px 55px 0 0;
+    width: 20% ;
+}
+.p-special{
+    margin-top: 20px;
+    color:rgb(206, 206, 206) ;
+}
+.span-special{
+    color:rgb(153, 151, 151) ;
+    font-size: 18px;
+    font-weight: bold;
+}
+.i-special{
+    margin-left: 3px;
+    padding: 5px 5px 1px 5px;
+    background-color:rgb(82, 70, 2) ;
+    color: rgba(153, 151, 151, 0.7);
+    font-size: 20px;
+    visibility: hidden;
+}
+.div-special-info:hover .i-special{
+    visibility: visible;
+}
+/* ########################################################################################################## */
+.div-dicacc{
+    margin-top: 20px;
+    display: flex;
+}
+.div-markting{
+    width: 500px;
+    height: 390px;
+    color: white;
+    background-color: rgb(66, 66, 66);
+}
+.div-icon{
+    display: flex;
+}
+.i-markting{
+    color: rgb(153, 130, 1);
+    margin-left: 15px;
+}
+.span-markting{
+    margin: 15px 0 0 5px;
+    font-weight: bold;
+}
+.p-markting{
+    margin: 2px 0 0 70px;
+}
+.p-m2{
+    margin: 15px 15px 0 15px;
+    color: rgb(168, 168, 168);
+    font-size: x-large;
+}
+.divs-hrr{
+    display: flex;
+    width: 50%;
+    margin-left: 227px;
+}
+.hrr2{
+    margin-top: 35px;
+    width: 70px;
+    background-color: rgb(153, 130, 1);
+}
+.discount1{
+    background-image: url(../photo/Real\ Madrid\ third\ kit\ 2023-24.jpeg);
+}
+.discount{
+    width: 300px;
+    height: 390px;
+    background-size: cover;
+    margin-left: 20px;
+    position: relative;
+}
+.discount2{
+    background-image: url(../photo/b6c5ad5b-6487-4d37-bef7-810ba5e1db58.jpeg);
+}
+.p-discount{
+    margin: 20px 0 0 20px;
+    font-size: x-large;
+    color: rgb(153, 130, 1) ;
+}
+.h4-dis{
+    color: aliceblue;
+    margin: 3px 0 0 20px;
+}
+.discount:hover{
+    transform:scale(1.1) ;
+}
+/* ##########################################################################################33 */
+.Delivery-itme{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.Delivery-price2,.Delivery-price1{
+    text-align: center;
+    width: 210px;
+    height: 117px;
+    overflow: hidden;
+    position: relative;
+}
+.Delivery-price1{
+    border-right: 1px solid rgb(112, 96, 1);
+}
+.icons-all1,.icons-all2{
+    height: 80px;
+    flex: 1;
+    transition: all .5;
+    font-size: 45px;
+    padding: 6px 200px 6px 20px;
+    color:  rgb(167, 165, 165);
+}
+.title-Delivery{
+    font-size: 20px;
+    margin-top: 55px;
+    color: white;
+}
+.title-service{
+    font-size: 17px;
+    padding-top: 4px;
+    color: rgb(172, 171, 171);
+}
+.hrr3{
+    width: 100%;
+    color: rgb(153, 130, 1);
+    border: 0;
+    margin-top: 40px;
+}
+.icons-all1{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 20px 0 0 85px;
+    transition: .7s;
+}
+.icons-all2{
+    position: absolute;
+    top: -200%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 20px 0 0 85px;
+    transition: .9s;
+    color:rgb(153, 130, 1) ;
+}
+.Delivery-price1:hover .icons-all1{
+    top: -200%;
+}
+.Delivery-price1:hover .icons-all2{
+    top: 20%;
+}
+.Delivery-price2:hover .icons-all1{
+    top: -200%;
+}
+.Delivery-price2:hover .icons-all2{
+    top: 20%;
+}
+/* ####################################################################################3333 */
+.div-special-headr2{
+    margin-top: 100px;
+    height: 150px;
+}
+.p-special9{
+    margin-left: 300px;
+}
+.hrr-feat{
+    margin-bottom: 25px;
+}
+.perant2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    width: 1090px;
+    position: relative;
+    transition: 1s;
+    height: 520px;
+    transform-style: preserve-3d;
+    margin-top: 50px;
+}
+.back,.front{
+    position: absolute;
+    height: 350px;
+    width: 350px;
+}
+.front{
+    z-index: 1;
+    backface-visibility: hidden;
+}
+.menu-item:hover .front{
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+.menu-item{
+    height: 500px;
+}
+.list-unstyled .li-back{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    list-style: none;
+    text-align: center;
+    background-color: rgb(153, 130, 1);
+    padding-top: 3px;
+}
+.li1-back{
+    margin-left: -80px;
+}
+.list-unstyled{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.div-star{
+    margin-top: 350px;
+    height: 150px;
+    width: 350px;
+}
+.icons-all23{
+    color: rgb(190, 162, 1);
+    padding-top: 15px;
+}
+.title-Delivery2{
+   margin-top: -1px;
+}
+.title-service2{
+    font-size: x-large;
+    font-weight: bold;
+}
